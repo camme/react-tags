@@ -121,6 +121,7 @@ Otherwise, you can simply import along with the backend itself (as shown above).
 - [`allowDeleteFromEmptyInput`](#allowDeleteFromEmptyInput)
 - [`handleInputChange`](#handleInputChange)
 - [`handleInputBlur`](#handleInputBlur)
+- [`handleEmptyEnter`](#handleEmptyEnter)
 - [`minQueryLength`](#minQueryLength)
 - [`removeComponent`](#removeComponent)
 - [`autocomplete`](#autocomplete)
@@ -266,6 +267,17 @@ Optional event handler for input onBlur
     handleInputBlur={this.handleInputBlur}
     ...>
 ```
+
+<a name="handleEmptyEnter"></a>
+##### handleEmptyEnter (optional)
+Optional event handler to handle when a user presses enter with an empty string
+
+```js
+<ReactTags
+    handleEmptyEnter={this.handleEmptyEnter}
+    ...>
+```
+
 
 <a name="minQueryLength"></a>
 ##### minQueryLength (optional)
